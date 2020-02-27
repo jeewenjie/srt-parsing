@@ -1,6 +1,7 @@
 import os
 
 import srt # pip install srt
+import tqdm
 import glob
 import argparse
 
@@ -58,7 +59,7 @@ class SpeechDetector():
 
             srtFile.close()
             tranScript.close()
-            exit()
+
 
 def main():
     sd = SpeechDetector(args);
